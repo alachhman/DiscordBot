@@ -1,0 +1,9 @@
+{
+  "name": "Steven",
+  "info": "Known as the wandering stone collector due to his love of rare stones, he is actually the heir to the Devon Corporation and Champion of the Hoenn Pokémon League.",
+  "base_potential": 5,
+  "recruit_method": "Sync Pair Scout",
+  "pokemon_list": [
+    "Steven & Metagross"
+  ]
+}

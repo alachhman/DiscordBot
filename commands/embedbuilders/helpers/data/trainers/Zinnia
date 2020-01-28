@@ -1,0 +1,9 @@
+{
+  "name": "Zinnia",
+  "info": "This mysterious Trainer journeyed throughout the Hoenn region to carry out her mission as the Lorekeeper of the Draconid people.",
+  "base_potential": 5,
+  "recruit_method": "Legendary Event",
+  "pokemon_list": [
+    "Zinnia & Rayquaza"
+  ]
+}
