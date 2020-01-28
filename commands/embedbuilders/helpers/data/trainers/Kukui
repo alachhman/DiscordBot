@@ -1,0 +1,9 @@
+{
+  "name": "Kukui",
+  "info": "This Pokémon Professor made his dream of establishing a\nPokémon League in the Alola region come true. His life’s work is studying Pokémon moves.",
+  "base_potential": 5,
+  "recruit_method": "Sync Pair Scout",
+  "pokemon_list": [
+    "Kukui a& Lycanroc"
+  ]
+}
