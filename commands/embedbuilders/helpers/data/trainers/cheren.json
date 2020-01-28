@@ -1,9 +1,0 @@
-{
-  "name": "Cheren",
-  "info": "A talented Trainer who is both a Gym Leader and a teacher in the Unova region, he is committed to fulfilling both roles well - even though he's just starting out.",
-  "base_potential": 5,
-  "recruit_method": "Story Progression",
-  "pokemon_list": [
-    "Cheren & Stoutland"
-  ]
-}

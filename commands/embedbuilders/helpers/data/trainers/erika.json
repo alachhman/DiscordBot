@@ -1,9 +1,0 @@
-{
-  "name": "Erika",
-  "info": "A cute Gym Leader who loves Grass-type Pokémon, this well-mannered Trainer teaches flower arrangement in Kanto.",
-  "base_potential": 3,
-  "recruit_method": "Story Progression",
-  "pokemon_list": [
-    "Erika & Vileplume"
-  ]
-}

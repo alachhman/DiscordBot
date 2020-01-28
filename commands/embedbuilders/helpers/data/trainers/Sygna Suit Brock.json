@@ -1,9 +1,1 @@
-{
-  "name": "Sygna Suit Brock",
-  "info": "Known as the rock-solid Pokémon Trainer, he is a reliable Gym Leader who watches over and supports younger Trainers.\nObtain: Clear Interlude 1 (after Chapter 10) - The Journey Begins Anew.",
-  "base_potential": 3,
-  "recruit_method": "Costume",
-  "pokemon_list": [
-    "Sygna Suit Brock & Tyranitar"
-  ]
-}
+{"name":"Sygna Suit Brock","info":"In his sygna suit, Brock is ready for anything. His polished, rock-hard strength makes his attacks hit with the weight of a boulder.\n","base_potential":5,"recruit_method":"Costume","pokemon_list":["Sygna Suit Brock & Tyranitar"]}

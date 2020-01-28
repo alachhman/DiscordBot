@@ -1,9 +1,0 @@
-{
-  "name": "Roark",
-  "info": "A Gym Leader who uses Rock types and works in a mine, he's good at digging holes and likes to collect fossils. He respects his father, Byron, who is also a Gym Leader.",
-  "base_potential": 3,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Roark & Cranidos"
-  ]
-}

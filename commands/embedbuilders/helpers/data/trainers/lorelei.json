@@ -1,9 +1,0 @@
-{
-  "name": "Lorelei",
-  "info": "This cool beauty who uses Ice-type Pokémon is one of the Elite Four. She likes cute things and has many plushies at home.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Lorelei & Lapras"
-  ]
-}

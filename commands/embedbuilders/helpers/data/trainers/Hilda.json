@@ -1,11 +1,1 @@
-{
-  "name": "Hilda",
-  "info": "This hot-blooded young lady loves trends, laughter, and, most of all, Pokémon battles. She’s on a journey to grow stronger wherever she goes.\n",
-  "base_potential": 5,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Hilda & Tepig",
-    "Hilda & Pignite",
-    "Hilda & Emboar"
-  ]
-}
+{"name":"Hilda","info":"This hot-blooded young lady loves trends, laughter, and, most of all, Pokémon battles. She’s on a journey to grow stronger wherever she goes.\n","base_potential":5,"recruit_method":"Sync Pair Scout","pokemon_list":["Hilda & Tepig","Hilda & Pignite","Hilda & Emboar"]}

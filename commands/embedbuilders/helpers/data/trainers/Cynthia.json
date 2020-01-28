@@ -1,10 +1,1 @@
-{
-  "name": "Cynthia",
-  "info": "#1 Best Girl",
-  "base_potential": 5,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Cynthia & Garchomp",
-    "Cynthia & Mega Garchomp"
-  ]
-}
+{"name":"Cynthia","info":"","base_potential":5,"recruit_method":"","pokemon_list":["Cynthia & Garchomp","Cynthia & Mega Garchomp"]}

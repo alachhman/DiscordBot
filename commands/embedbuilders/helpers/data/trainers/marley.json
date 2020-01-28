@@ -1,9 +1,0 @@
-{
-  "name": "Marley",
-  "info": "She doesn't speak much and seems mysterious, but she simply doesn't like to talk and is really a Trainer with a kind heart who cares about both people and Pokémon.",
-  "base_potential": 3,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Marley & Arcanine"
-  ]
-}

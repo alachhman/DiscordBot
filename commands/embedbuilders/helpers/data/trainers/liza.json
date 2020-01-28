@@ -1,9 +1,0 @@
-{
-  "name": "Liza",
-  "info": "One of a rare pair of twin Gym Leaders, she helps at the Mossdeep Space Center and excels at cooperation in battle - much like her twin, Tate.",
-  "base_potential": 3,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Liza & Lunatone"
-  ]
-}

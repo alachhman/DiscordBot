@@ -1,9 +1,0 @@
-{
-  "name": "Brock",
-  "info": "Known as the rock-solid Pokémon Trainer, he is a reliable Gym Leader who watches over and supports younger Trainers.",
-  "base_potential": 3,
-  "recruit_method": "Story Progression",
-  "pokemon_list": [
-    "Brock & Onix"
-  ]
-}

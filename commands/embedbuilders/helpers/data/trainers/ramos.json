@@ -1,9 +1,0 @@
-{
-  "name": "Ramos",
-  "info": "An elderly Grass-type Gym Leader with a calm nature, his work as a gardener keeps him physically strong. He'll go wherever he needs to to harvest his favorite tea leaves.",
-  "base_potential": 3,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Ramos & Weepinbell"
-  ]
-}

@@ -1,9 +1,0 @@
-{
-  "name": "Whitney",
-  "info": "A lively, talkative, trend-following Gym Leader who's proud of her cute Pokémon, she cries in disappointment when she loses a battle.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Whitney & Miltank"
-  ]
-}

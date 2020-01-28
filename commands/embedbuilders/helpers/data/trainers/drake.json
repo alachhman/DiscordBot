@@ -1,9 +1,0 @@
-{
-  "name": "Drake",
-  "info": "Once saved by a Pokémon, now he battles as one of the Elite Four to show his gratitude. He thinks Trainers should have virtuous hearts.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Drake & Salamence"
-  ]
-}

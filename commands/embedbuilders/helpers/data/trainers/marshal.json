@@ -1,9 +1,0 @@
-{
-  "name": "Marshal",
-  "info": "One of the Unova League's Elite Four, he knows the difficulty in becoming strong and yet he strives to grow even stronger in battle.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Marshal & Conkeldurr"
-  ]
-}

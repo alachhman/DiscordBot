@@ -1,9 +1,1 @@
-{
-  "name": "Giovanni",
-  "info": "This leader of the expansive Team Rainbow Rocket enterprise, which aims to use Pokémon to rule the world, believes Pokémon are no more than tools.\n",
-  "base_potential": 5,
-  "recruit_method": "Event Shop",
-  "pokemon_list": [
-    "Giovanni & Mewtwo"
-  ]
-}
+{"name":"Giovanni","info":"This leader of the expansive Team Rainbow Rocket enterprise, which aims to use Pokémon to rule the world, believes Pokémon are no more than tools.\n","base_potential":5,"recruit_method":"","pokemon_list":["Giovanni & Mewtwo"]}

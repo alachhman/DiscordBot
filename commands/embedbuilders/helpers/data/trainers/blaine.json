@@ -1,9 +1,0 @@
-{
-  "name": "Blaine",
-  "info": "This old man with a passion for trivia is known as the hotheaded quiz master. He's a Fire-type Gym Leader with a veteran Trainer's skill and a researcher's knowledge.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Blaine & Ponyta"
-  ]
-}

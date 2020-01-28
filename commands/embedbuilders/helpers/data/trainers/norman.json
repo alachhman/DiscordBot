@@ -1,9 +1,0 @@
-{
-  "name": "Norman",
-  "info": "This Gym Leader is a serious, stoic family man who never neglects his training to become stronger - nor caring for his family - in his pursuit of victory.",
-  "base_potential": 3,
-  "recruit_method": "Story Progression",
-  "pokemon_list": [
-    "Norman & Slaking"
-  ]
-}

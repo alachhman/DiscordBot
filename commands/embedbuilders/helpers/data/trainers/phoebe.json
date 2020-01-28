@@ -1,9 +1,0 @@
-{
-  "name": "Phoebe",
-  "info": "This member of the Elite Four apparently gained the ability to commune and even converse with ghosts, thanks to her training on Mt. Pyre.",
-  "base_potential": 5,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Phoebe & Dusclops"
-  ]
-}

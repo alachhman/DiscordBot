@@ -1,9 +1,0 @@
-{
-  "name": "Gardenia",
-  "info": "This bold Gym Leader uses Grass-type Pokémon and is quite scared of ghosts and anything that surprises her. Her fear sometimes keeps her up at night.",
-  "base_potential": 4,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Gardenia & Roserade"
-  ]
-}

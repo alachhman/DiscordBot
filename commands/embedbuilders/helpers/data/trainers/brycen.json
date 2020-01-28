@@ -1,9 +1,0 @@
-{
-  "name": "Brycen",
-  "info": "This former movie star left the silver screen due to an on-set injury. Known for his stellar performance in the Brycen-Man movie, he is also a strong Gym Leader.",
-  "base_potential": 3,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Brycen & Cryogonal"
-  ]
-}
