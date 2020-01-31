@@ -4,7 +4,7 @@ const cheerio = require("cheerio");
 const axios = require("axios");
 const {trainerData} = require('./trainers');
 log = console.log;
-const trainerFolder = "/Users/alachhman/Documents/GitHub/DiscordBot/commands/embedbuilders/helpers/data/trainers/";
+const trainerFolder = "D:\\Programming\\DiscordBot\\DiscordBot\\commands\\embedbuilders\\helpers\\data\\trainers\\";
 
 const getTrainerData = async () => {
     for (const trainer of trainerData) {
