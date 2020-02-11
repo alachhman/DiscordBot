@@ -1,0 +1,10 @@
+{
+  "name": "Oak",
+  "info": "This pioneering Pokémon Professor was an accomplished Trainer in his heyday and has since become an authority on Pokémon research. He is also Blue’s grandfather.",
+  "base_potential": 3,
+  "recruit_method": "Story Progression",
+  "pokemon_list": [
+    "Oak & Mew",
+    "Mew (After Sync)"
+  ]
+}

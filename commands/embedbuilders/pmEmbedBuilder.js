@@ -9,6 +9,7 @@ module.exports = {
         const unit = await HELPER.findJSON(args.join(" "), "trainers");
         const rarity = await GENERAL.generateStars(unit.base_potential);
         const icon = await HELPER.getUnitIcon(unit);
+        let image = 'https://www.serebii.net/pokemonmasters/syncpairs/' + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + '.png';
 
         for (let PKMN of unit.pokemon_list) {
             PKMNList.push(await HELPER.findJSON(PKMN.replace(unit.name + " & ", ""), "pokemon"))
@@ -21,13 +22,17 @@ module.exports = {
             //Todo: find a better solution to situations like solgaleo rarity
             //*
             let solgaleoRarity;
-            if(PKMNJson.name === 'Solgaleo'){
+            if (PKMNJson.name === 'Solgaleo') {
                 solgaleoRarity = await GENERAL.generateStars('5');
                 embedArr.push(await generateIndividualPKMNEmbed(PKMNJson, unit, solgaleoRarity, icon, client))
-            }else{
+            } else {
                 embedArr.push(await generateIndividualPKMNEmbed(PKMNJson, unit, rarity, icon, client))
             }
             //*
+        }
+
+        if (unit.name === "Oak") {
+            image = "https://i.imgur.com/e5C5a9v.png";
         }
 
         const baseEmbed = new Discord.RichEmbed()
@@ -37,7 +42,7 @@ module.exports = {
             .setURL("https://www.antnee.net/#/pm/pair/" + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "_"))
             .addField("Obtain Method", unit.recruit_method === "" ? "TELL ANTNEE TO FIX THIS" : unit.recruit_method)
             .addField("Background", unit.info)
-            .setImage('https://www.serebii.net/pokemonmasters/syncpairs/' + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + '.png')
+            .setImage(image)
             .setColor(color);
         embedArr.push(baseEmbed);
         return embedArr;
@@ -50,7 +55,7 @@ module.exports = {
 async function generateIndividualPKMNEmbed(PKMN, trainer, rarity, icon, client) {
     let isTwoTyped = PKMN.type2 === "";
     let movesOut = await HELPER.generateMovesOut(PKMN.moves, client);
-    if(movesOut.length > 1024){
+    if (movesOut.length > 1024) {
         movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/pm/pair/" + trainer.name + '\n'
     }
     return new Discord.RichEmbed()

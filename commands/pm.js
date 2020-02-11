@@ -19,11 +19,13 @@ module.exports = {
             await GENERAL.stopTypingAlert(message);
         } else {
             await GENERAL.startTypingAlert(message);
-            //message.channel.send(await BUILDER.pairSearchEmbed(args[0], client));
-            await GENERAL.paginationEmbed(message, await BUILDER.pairSearchEmbed(args, client), GENERAL.nextButtons, GENERAL.paginationTimeOut);
-            await GENERAL.stopTypingAlert(message);
+            try{
+                await GENERAL.paginationEmbed(message, await BUILDER.pairSearchEmbed(args, client), GENERAL.nextButtons, GENERAL.paginationTimeOut);
+                await GENERAL.stopTypingAlert(message);
+            }catch (e) {
+                await GENERAL.stopTypingAlert(message);
+            }
         }
-
     },
 };
 
