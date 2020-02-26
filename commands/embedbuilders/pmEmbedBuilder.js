@@ -54,7 +54,7 @@ module.exports = {
 
 async function generateIndividualPKMNEmbed(PKMN, trainer, rarity, icon, client) {
     let isTwoTyped = PKMN.type2 === "";
-    let movesOut = await HELPER.generateMovesOut(PKMN.moves, client);
+    let movesOut = await HELPER.generateMovesOut(PKMN.moves, client) + await HELPER.generateSyncOut(PKMN.syncMove, client);
     if (movesOut.length > 1024) {
         movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/pm/pair/" + trainer.name + '\n'
     }
@@ -69,6 +69,6 @@ async function generateIndividualPKMNEmbed(PKMN, trainer, rarity, icon, client) 
         )
         .addField("**〜 Stats 〜**", await HELPER.generateStatTable(PKMN.stats))
         .addField("**〜 Passives 〜**", await HELPER.generatePassivesOut(PKMN.passives))
-        .addField("**〜 Moves 〜**", movesOut + await HELPER.generateSyncOut(PKMN.syncMove, client))
+        .addField("**〜 Moves 〜**", movesOut)
         .setColor(await GENERAL.getColor(PKMN.type1));
 }

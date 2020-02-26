@@ -1,7 +1,7 @@
 const BUILDER = require('./embedbuilders/pmEmbedBuilder');
 const GENERAL = require("./embedbuilders/helpers/generalHelper");
 module.exports = {
-    name: 'ms',
+    name: 'mst',
     display: 'Pokemon Masters New!',
     description: 'Try out the new redesigned masters search with `>ms [trainer or pokemon name]`',
     async execute(message, args, client) {
@@ -23,6 +23,7 @@ module.exports = {
                 await GENERAL.paginationEmbed(message, await BUILDER.pairSearchEmbed(args, client), GENERAL.nextButtons, GENERAL.paginationTimeOut);
                 await GENERAL.stopTypingAlert(message);
             }catch (e) {
+                console.log(e);
                 await GENERAL.stopTypingAlert(message);
             }
         }

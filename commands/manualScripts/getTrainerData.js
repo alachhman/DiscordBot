@@ -4,9 +4,10 @@ const cheerio = require("cheerio");
 const axios = require("axios");
 const {trainerData} = require('./trainers');
 log = console.log;
-const trainerFolder = "D:\\Programming\\DiscordBot\\DiscordBot\\commands\\embedbuilders\\helpers\\data\\trainers\\";
+const trainerFolder = "/Users/alachhman/Documents/GitHub/DiscordBot/commands/embedbuilders/helpers/data/trainers/";
 
 const getTrainerData = async () => {
+    trainerData.map();
     for (const trainer of trainerData) {
         const trainerUri = await axios.get(
             "https://gamepress.gg/pokemonmasters/trainer/" + trainer.Trainer.replace(". ", "-").replace(" ", "-").replace(" ", "-")

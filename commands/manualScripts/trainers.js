@@ -1,6 +1,31 @@
 module.exports = {
     trainerData: [
         {
+            "Trainer": "Valerie",
+            "Base Potential": "4",
+            "Pokemon": "Valerie & Sylveon"
+        },
+        {
+            "Trainer": "Fantina",
+            "Base Potential": "5",
+            "Pokemon": "Fantina & Mismagius"
+        },
+        {
+            "Trainer": "Sabrina",
+            "Base Potential": "5",
+            "Pokemon": "Sabrina & Alakazam     Sabrina & Mega Alakazam"
+        },
+        {
+            "Trainer": "Sygna Suit Elesa",
+            "Base Potential": "5",
+            "Pokemon": "Sygna Suit Elesa & Rotom"
+        },
+        {
+            "Trainer": "Red",
+            "Base Potential": "5",
+            "Pokemon": "Red & Charizard     Red & Mega Charizard X"
+        },
+        {
             "Trainer": "Steven",
             "Base Potential": "",
             "Pokemon": "Steven & Metagross     Steven & Mega Metagross"
@@ -93,7 +118,7 @@ module.exports = {
         {
             "Trainer": "Phoebe",
             "Base Potential": "",
-            "Pokemon": "Phoebe & Dusclops"
+            "Pokemon": "Phoebe & Dusclops     Phoebe & Dusknoir"
         },
         {
             "Trainer": "Blue",
@@ -123,12 +148,12 @@ module.exports = {
         {
             "Trainer": "Hilbert",
             "Base Potential": "",
-            "Pokemon": "Hilbert & Oshawott"
+            "Pokemon": "Hilbert & Oshawott     Hilbert & Dewott     Hilbert & Samurott"
         },
         {
             "Trainer": "Calem",
             "Base Potential": "",
-            "Pokemon": "Calem & Espurr"
+            "Pokemon": "Calem & Espurr     Calem & Meowstic"
         },
         {
             "Trainer": "Cheren",
@@ -168,7 +193,7 @@ module.exports = {
         {
             "Trainer": "Blaine",
             "Base Potential": "",
-            "Pokemon": "Blaine & Ponyta"
+            "Pokemon": "Blaine & Ponyta     Blaine & Rapidash"
         },
         {
             "Trainer": "Bruno",
@@ -208,12 +233,12 @@ module.exports = {
         {
             "Trainer": "Grant",
             "Base Potential": "",
-            "Pokemon": "Grant & Amaura"
+            "Pokemon": "Grant & Amaura     Grant & Aurorus"
         },
         {
             "Trainer": "Roxie",
             "Base Potential": "",
-            "Pokemon": "Roxie & Whirlipede"
+            "Pokemon": "Roxie & Whirlipede     Roxie & Scolipede"
         },
         {
             "Trainer": "Lorelei",
@@ -278,7 +303,7 @@ module.exports = {
         {
             "Trainer": "Maylene",
             "Base Potential": "",
-            "Pokemon": "Maylene & Meditite"
+            "Pokemon": "Maylene & Meditite     Maylene & Medicham"
         },
         {
             "Trainer": "Mina",
@@ -331,11 +356,6 @@ module.exports = {
             "Pokemon": "Janine & Ariados"
         },
         {
-            "Trainer": "Sygna Suit Brock",
-            "Base Potential": "",
-            "Pokemon": "Sygna Suit Brock & Tyranitar"
-        },
-        {
             "Trainer": "Liza",
             "Base Potential": "",
             "Pokemon": "Liza & Lunatone"
@@ -373,17 +393,17 @@ module.exports = {
         {
             "Trainer": "Roark",
             "Base Potential": "",
-            "Pokemon": "Roark & Cranidos"
+            "Pokemon": "Roark & Cranidos     Roark & Rampardos"
         },
         {
             "Trainer": "Clay",
             "Base Potential": "",
-            "Pokemon": "Clay & Palpitoad"
+            "Pokemon": "Clay & Palpitoad     Clay & Seismitoad"
         },
         {
             "Trainer": "Brock",
             "Base Potential": "",
-            "Pokemon": "Brock & Onix"
+            "Pokemon": "Brock & Onix     Brock & Tyranitar"
         },
         {
             "Trainer": "Candice",
@@ -393,7 +413,7 @@ module.exports = {
         {
             "Trainer": "Ramos",
             "Base Potential": "",
-            "Pokemon": "Ramos & Weepinbell"
+            "Pokemon": "Ramos & Weepinbell     Ramos & Victreebel"
         },
         {
             "Trainer": "Norman",
@@ -403,7 +423,7 @@ module.exports = {
         {
             "Trainer": "Roxanne",
             "Base Potential": "",
-            "Pokemon": "Roxanne & Nosepass"
+            "Pokemon": "Roxanne & Nosepass     Roxanne & Probopass"
         },
         {
             "Trainer": "Barry",
@@ -413,7 +433,7 @@ module.exports = {
         {
             "Trainer": "Lt. Surge",
             "Base Potential": "",
-            "Pokemon": "Lt. Surge & Voltorb"
+            "Pokemon": "Lt. Surge & Voltorb     Lt. Surge & Electrode"
         },
         {
             "Trainer": "Pryce",
