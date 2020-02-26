@@ -7,6 +7,7 @@ module.exports = {
         let PKMNList = [];
 
         const unit = await HELPER.findJSON(args.join(" "), "trainers");
+        console.log(unit.name);
         const rarity = await GENERAL.generateStars(unit.base_potential);
         const icon = await HELPER.getUnitIcon(unit);
         let image = 'https://www.serebii.net/pokemonmasters/syncpairs/' + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + '.png';

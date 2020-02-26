@@ -1,1 +1,12 @@
-{"name":"Barry","info":"An incredibly impetuous, high-spirited young man who runs straight for what he wants without any hesitation, he has an earnest passion for Pokémon.\n","base_potential":5,"recruit_method":"Story Progression","pokemon_list":["Barry & Empoleon","Barry & Piplup","Barry & Prinplup"]}
+{
+  "name": "Barry",
+  "info": "An incredibly impetuous, high-spirited young man who runs straight for what he wants without any hesitation, he has an earnest passion for Pokémon.\n",
+  "type": "Water",
+  "base_potential": 5,
+  "recruit_method": "Story Progression",
+  "pokemon_list": [
+    "Barry & Empoleon",
+    "Barry & Piplup",
+    "Barry & Prinplup"
+  ]
+}

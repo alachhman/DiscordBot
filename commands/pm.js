@@ -5,7 +5,7 @@ module.exports = {
     display: 'Pokemon Masters New!',
     description: 'Try out the new redesigned masters search with `>ms [trainer or pokemon name]`',
     async execute(message, args, client) {
-        if (message.content.startsWith(">ms pooldata")) {
+        if (message.content.startsWith(">" + this.name + " pooldata")) {
             await GENERAL.startTypingAlert(message);
             if (message.content.includes("trainers")) {
                 message.channel.send("Pooling trainer JSON data.");

@@ -10,6 +10,6 @@ module.exports = {
             .addField("Commands", client.commands.map((command) => {
                 return "**" + command.display + ":**\n" + command.description;
             }));
-        message.channel.send({embed})
+        message.channel.send("|| "+{embed}+" ||")
     },
 };

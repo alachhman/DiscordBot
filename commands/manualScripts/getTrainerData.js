@@ -7,12 +7,11 @@ log = console.log;
 const trainerFolder = "/Users/alachhman/Documents/GitHub/DiscordBot/commands/embedbuilders/helpers/data/trainers/";
 
 const getTrainerData = async () => {
-    trainerData.map();
-    for (const trainer of trainerData) {
+    trainerData.map(async function (trainer) {
         const trainerUri = await axios.get(
             "https://gamepress.gg/pokemonmasters/trainer/" + trainer.Trainer.replace(". ", "-").replace(" ", "-").replace(" ", "-")
         );
-        const $ = cheerio.load(trainerUri.data);
+        let $ = cheerio.load(trainerUri.data);
 
         const description = $('div.trainer-description').text();
 
@@ -31,9 +30,16 @@ const getTrainerData = async () => {
 
         const recruitMethod = $('#sync-pair-table > tbody > tr:nth-child(3) > td').text();
 
+        const firstPokemonData = await axios.get('https://gamepress.gg' + ($('.view.view-pokemon-on-trainer-node').find('a').attr("href")));
+
+        $ = cheerio.load(firstPokemonData.data);
+
+        const type = $('#pokemon-table > tbody > tr:nth-child(1) > td').text().split('\n')[1];
+
         const object = {
             name: trainer.Trainer,
             info: description,
+            type: type,
             base_potential: parseInt(base_potential),
             recruit_method: recruitMethod,
             pokemon_list: trainer.Pokemon.split("     ")
@@ -42,7 +48,7 @@ const getTrainerData = async () => {
         let objectString = JSON.stringify(object);
         fs.writeFileSync(trainerFolder + trainer.Trainer + ".json", objectString);
         console.log(object.name + " has been written");
-    }
+    });
 };
 
 getTrainerData();
