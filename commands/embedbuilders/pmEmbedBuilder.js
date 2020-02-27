@@ -57,7 +57,7 @@ async function generateIndividualPKMNEmbed(PKMN, trainer, rarity, icon, client) 
     let isTwoTyped = PKMN.type2 === "";
     let movesOut = await HELPER.generateMovesOut(PKMN.moves, client) + await HELPER.generateSyncOut(PKMN.syncMove, client);
     if (movesOut.length > 1024) {
-        movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/pm/pair/" + trainer.name + '\n'
+        movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/pm/pair/" + trainer.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "_") + '\n'
     }
     return new Discord.RichEmbed()
         .setAuthor(trainer.name + " & " + PKMN.name + " ・ " + PKMN.role + " " + rarity, await HELPER.getPKMNIcon(PKMN.name))

@@ -1,1 +1,11 @@
-{"name":"Elesa","info":"This Electric-type Gym Leader also works as a model. Watching her battle in the beautiful, bright lights of her Gym can be mesmerizing.\n","type":"Electric","base_potential":5,"recruit_method":"Sync Pair Scout","pokemon_list":["Elesa & Zebstrika"]}
+{
+  "name": "Elesa",
+  "info": "This Electric-type Gym Leader also works as a model. Watching her battle in the beautiful, bright lights of her Gym can be mesmerizing.\n",
+  "type": "Electric",
+  "base_potential": 5,
+  "recruit_method": "Sync Pair Scout",
+  "pokemon_list": [
+    "Elesa & Zebstrika",
+    "Elesa & Rotom"
+  ]
+}
