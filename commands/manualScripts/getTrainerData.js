@@ -15,7 +15,16 @@ const getTrainerData = async () => {
 
         const description = $('div.trainer-description').text();
 
-        let base_potential_src = $('#sync-pair-table > tbody > tr:nth-child(2) > td').attr("src");
+
+        const recruitMethod = $('#sync-pair-table > tbody > tr:nth-child(3) > td').text();
+
+        const firstPokemonData = await axios.get('https://gamepress.gg' + ($('.view.view-pokemon-on-trainer-node').find('a').attr("href")));
+
+        $ = cheerio.load(firstPokemonData.data);
+
+        const type = $('#pokemon-table > tbody > tr:nth-child(1) > td').text().split('\n')[1];
+
+        let base_potential_src = $('#pokemon-table > tbody > tr:nth-child(4) > td > img').attr("src");
         if (base_potential_src === undefined) {
             base_potential_src = "5-star";
         }
@@ -27,14 +36,6 @@ const getTrainerData = async () => {
         } else if (base_potential_src.includes("3-star")) {
             base_potential = 3;
         }
-
-        const recruitMethod = $('#sync-pair-table > tbody > tr:nth-child(3) > td').text();
-
-        const firstPokemonData = await axios.get('https://gamepress.gg' + ($('.view.view-pokemon-on-trainer-node').find('a').attr("href")));
-
-        $ = cheerio.load(firstPokemonData.data);
-
-        const type = $('#pokemon-table > tbody > tr:nth-child(1) > td').text().split('\n')[1];
 
         const object = {
             name: trainer.Trainer,
