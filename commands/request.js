@@ -168,7 +168,7 @@ module.exports = {
                             submittedOn: timestamp
                         });
                         message.channel.send(`User <@${message.author.id}> has requested a carry. A Carry will @ you in a Co-op channel ASAP!`);
-                        //client.channels.get('665772841714581505').send('<@&665606175974490119>');
+                        client.channels.get('665772841714581505').send('<@&665606175974490119>');
                         client.channels.get('665772841714581505').send(new Discord.RichEmbed()
                             .setTitle(`New Carry Request From ${message.author.username}`)
                             .setColor('#4286f4')

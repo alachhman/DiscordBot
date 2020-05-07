@@ -1,6 +1,41 @@
 module.exports = {
     trainerData: [
         {
+            "Trainer": "Wally",
+            "Base Potential": "5",
+            "Pokemon": "Wally & Gallade     Wally & Mega Gallade"
+        },
+        {
+            "Trainer": "Jasmine",
+            "Base Potential": "5",
+            "Pokemon": "Jasmine & Steelix     Jasmine & Mega Steelix"
+        },
+        {
+            "Trainer": "Wallace",
+            "Base Potential": "5",
+            "Pokemon": "Wallace & Milotic"
+        },
+        {
+            "Trainer": "Silver",
+            "Base Potential": "5",
+            "Pokemon": "Silver & Ho-Oh"
+        },
+        {
+            "Trainer": "Plumeria",
+            "Base Potential": "5",
+            "Pokemon": "Plumeria & Salazzle"
+        },
+        {
+            "Trainer": "Clemont",
+            "Base Potential": "5",
+            "Pokemon": "Clemont & Heliolisk"
+        },
+        {
+            "Trainer": "Guzma",
+            "Base Potential": "5",
+            "Pokemon": "Guzma & Golisopod"
+        },
+        {
             "Trainer": "Valerie",
             "Base Potential": "4",
             "Pokemon": "Valerie & Sylveon"
@@ -14,11 +49,6 @@ module.exports = {
             "Trainer": "Sabrina",
             "Base Potential": "5",
             "Pokemon": "Sabrina & Alakazam     Sabrina & Mega Alakazam"
-        },
-        {
-            "Trainer": "Sygna Suit Elesa",
-            "Base Potential": "5",
-            "Pokemon": "Sygna Suit Elesa & Rotom"
         },
         {
             "Trainer": "Red",
@@ -333,7 +363,7 @@ module.exports = {
         {
             "Trainer": "Player",
             "Base Potential": "",
-            "Pokemon": "Player & Torchic     Player & Pikachu     Player & Solgaleo"
+            "Pokemon": "Player & Torchic     Player & Pikachu     Player & Solgaleo     Player & Bulbasaur     Player & Ivysaur     Player & Venusaur     Player & Charmander     Player & Charmeleon     Player & Charizard     Player & Squirtle     Player & Wartortle     Player & Blastoise"
         },
         {
             "Trainer": "Flannery",

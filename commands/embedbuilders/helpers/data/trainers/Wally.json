@@ -1,0 +1,11 @@
+{
+  "name": "Wally",
+  "info": "Known as a boy who loves Pokémon, adventures, and battling, he has put everything into growing stronger as a Pokémon Trainer.\n",
+  "type": "Fighting",
+  "base_potential": 5,
+  "recruit_method": "Sync Pair Scout",
+  "pokemon_list": [
+    "Wally & Gallade",
+    "Wally & Mega Gallade"
+  ]
+}

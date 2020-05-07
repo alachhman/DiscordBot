@@ -1,0 +1,10 @@
+{
+  "name": "Wallace",
+  "info": "A Gym Leader referred to as the “Prince of Water,” he carries an air of refinement about him. His elegant battle style has earned him many fans.\n",
+  "type": "Water",
+  "base_potential": 5,
+  "recruit_method": "Sync Pair Scout",
+  "pokemon_list": [
+    "Wallace & Milotic"
+  ]
+}

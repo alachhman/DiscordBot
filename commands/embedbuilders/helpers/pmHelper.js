@@ -6,7 +6,46 @@ const GENERAL = require('./generalHelper');
 const iconUrl = 'https://gamepress.gg/sites/default/files/aggregatedjson/TrainersList.json?15813222081239323912';
 const util = require('util');
 module.exports = {
-    findJSON: async function (arg, seek) {
+    findMultipleJSON: async function (arg, seek, unit) {
+        const files = await fs.readdirSync(resourcePath + seek).filter(file => file.endsWith('.json'));
+        const returnVals = [];
+        for (const file of files) {
+            let rawData = await fs.readFileSync(resourcePath + seek + "/" + file);
+            let data = await JSON.parse(rawData);
+            if (unit !== "none" && seek === "pokemon") {
+                if (data.name.toUpperCase() === arg.toUpperCase() && unit.toLocaleUpperCase() === data.trainer.toLocaleUpperCase()) {
+                    returnVals.push(data);
+                }
+            } else {
+                if (data.name.toUpperCase() === arg.toUpperCase()) {
+                    returnVals.push(data);
+                }
+            }
+        }
+        if (returnVals.length > 0) {
+            return returnVals;
+        } else {
+            return false;
+        }
+    },
+    findJSON: async function (arg, seek, unit) {
+        const files = await fs.readdirSync(resourcePath + seek).filter(file => file.endsWith('.json'));
+        for (const file of files) {
+            let rawData = await fs.readFileSync(resourcePath + seek + "/" + file);
+            let data = await JSON.parse(rawData);
+            if (unit !== "none" && seek === "pokemon") {
+                if (data.name.toUpperCase() === arg.toUpperCase() && unit.toLocaleUpperCase() === data.trainer.toLocaleUpperCase()) {
+                    return data;
+                }
+            } else {
+                if (data.name.toUpperCase() === arg.toUpperCase()) {
+                    return data;
+                }
+            }
+        }
+        return false;
+    },
+    tempfindJSON: async function (arg, seek) {
         const trainerFiles = await fs.readdirSync(resourcePath + seek).filter(file => file.endsWith('.json'));
         for (const file of trainerFiles) {
             if (arg.toUpperCase() === 'AEGISLASH') {
@@ -70,8 +109,8 @@ module.exports = {
             + "\n"
             + sync.description;
     },
-    generateStatTable: async function (stats) {
-        let table = new AsciiTable();
+    generateStatTable: async function (stats, bulk) {
+        let table = new AsciiTable("Bulk: " + bulk);
         table
             .setBorder('|', '-', '■', '■')
             .setHeading('HP', 'ATK', 'DEF', 'SPATK', 'SPDEF', 'SPD')
@@ -93,7 +132,7 @@ module.exports = {
     getUnitIcon: async function (unit) {
         let icon;
         try {
-            if (unit.name === "Main Character") {
+            if (unit === "Main Character") {
                 await fetch(iconUrl)
                     .then(response => response.json())
                     .then(iconsUrl => icon = iconsUrl.find(function (curUnit) {
@@ -103,7 +142,7 @@ module.exports = {
                 await fetch(iconUrl)
                     .then(response => response.json())
                     .then(iconsUrl => icon = iconsUrl.find(function (curUnit) {
-                        return curUnit.title === unit.name
+                        return curUnit.title === unit
                     }).icon);
             }
         } catch (e) {
@@ -127,8 +166,8 @@ module.exports = {
                 + (isStatus
                         ? " **Uses:** " + move.uses + " **Target:** " + move.target
                         : " **Cost:** " + move.cost + " **PWR:** " + move.power.min_power + "→" + move.power.max_power + " **ACC:** " + move.accuracy + ((move.target === "All opponents")
-                            ? " **AOE**"
-                            : "")
+                        ? " **AOE**"
+                        : "")
                 )
                 + "\n"
                 + move.effect

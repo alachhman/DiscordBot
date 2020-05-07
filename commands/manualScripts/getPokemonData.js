@@ -2,7 +2,7 @@ const fs = require("fs");
 const cheerio = require("cheerio");
 const axios = require("axios");
 log = console.log;
-const pokemonFolder = "/Users/alachhman/Documents/GitHub/DiscordBot/commands/embedbuilders/helpers/data/pokemon/";
+const pokemonFolder = "C:\\Users\\Anthony\\WebstormProjects\\DiscordBot\\commands\\embedbuilders\\helpers\\data\\pokemon\\";
 
 const getPokemonMastersPokemonList = async () => {
     let json = await axios.get(
@@ -14,6 +14,9 @@ const getPokemonMastersPokemonList = async () => {
             .split("&amp;")
             .pop()
             .trim();
+        let trainer = pokemon.title_plain
+            .split(" &amp;")[0]
+            .replace("Sygna Suit ","");
         let filename = name
             .toLowerCase()
             .replace(/ /g, "-")
@@ -23,6 +26,7 @@ const getPokemonMastersPokemonList = async () => {
         let type2 = pokemon.type2_plain;
         let weakness = pokemon.weakness_plain;
         let role = pokemon.role;
+        let bulk = pokemon.bulk;
         let image = pokemon.icon
             .replace(/\n/g, "")
             .trim()
@@ -35,6 +39,26 @@ const getPokemonMastersPokemonList = async () => {
         );
 
         const $ = cheerio.load(pokemonMovesUri.data);
+
+        const rarityUrl = $(".base-potential-image > img").attr("src");
+        let rarity = "";
+        if(rarityUrl.includes("5-star")){
+            rarity = 5;
+        }else if(rarityUrl.includes("4-star")){
+            rarity = 4;
+        }else if(rarityUrl.includes("3-star")){
+            rarity = 3;
+        }else{
+            rarity = 3;
+        }
+
+        const otherForms = $(".pokemon-title")
+            .text()
+            .split("\n")
+            .filter(x => x !== "")
+            .map(x => x
+                .replace(trainer + " & ","")
+                .replace("Sygna Suit ", ""));
 
         const movesTable = $(
             ".view-moves-on-pokemon-node.pokemon-node-moves-container > div.views-row.pokemon-node-move > div.move-pokemon-page-container"
@@ -186,19 +210,23 @@ const getPokemonMastersPokemonList = async () => {
 
         let object = {
             name: name === "" ? "" : name,
+            trainer: trainer === "" ? "" : trainer,
             type1: type1 === "" ? "" : type1,
             type2: type2 === "" ? "" : type2,
             weakness: weakness === "" ? "" : weakness,
+            rarity: rarity,
             role: role === "" ? "" : role,
             image: image === "" ? "" : image,
             stats: stats,
+            bulk: bulk,
             moves: moves,
             syncMove: SyncMove,
-            passives: passives
+            passives: passives,
+            otherForms: otherForms
         };
 
         let objectString = JSON.stringify(object);
-        fs.writeFileSync(pokemonFolder + filename + ".json", objectString);
+        fs.writeFileSync(pokemonFolder + filename + "-" + trainer + ".json", objectString);
         console.log(object.name + " has been written");
     });
 };
