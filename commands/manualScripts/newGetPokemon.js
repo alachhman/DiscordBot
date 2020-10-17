@@ -41,7 +41,7 @@ const getPokemonData = async (links) => {
         const dataTable = $("#pokemon-table");
 
         let pokemonTyping = [];
-        $(dataTable.find(".type-image > span")).each(await async function () {
+        $(dataTable.find("tbody > tr:nth-child(1) > td > span")).each(await async function () {
             const type = $(this).attr("class");
             pokemonTyping.push(type.replace("-type", ""))
         });
