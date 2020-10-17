@@ -1,1 +1,10 @@
-{"name":"Acerola","info":"Rumored to be descended from an ancient Alolan dynasty, this Ghost-type Pokémon user serves as one of the Alola region’s Elite Four.\n","type":"Ghost","base_potential":5,"recruit_method":"Story Progression","pokemon_list":["Acerola & Palossand"]}
+{
+  "name": "Acerola",
+  "rarity": 5,
+  "pokemon": [
+    "Palossand",
+    "Mimikyu",
+    "Mimikyu (Busted Form)"
+  ],
+  "image": "https://serebii.net/pokemonmasters/syncpairs/acerola.png"
+}

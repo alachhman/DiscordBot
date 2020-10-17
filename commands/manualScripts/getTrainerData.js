@@ -13,12 +13,12 @@ const getTrainerData = async () => {
         );
         let $ = cheerio.load(trainerUri.data);
 
-        const description = $('div.trainer-description').text();
+        const description = $('div.trainers-description').text();
 
 
         const recruitMethod = $('#sync-pair-table > tbody > tr:nth-child(3) > td').text();
 
-        const firstPokemonData = await axios.get('https://gamepress.gg' + ($('.view.view-pokemon-on-trainer-node').find('a').attr("href")));
+        const firstPokemonData = await axios.get('https://gamepress.gg' + ($('.view.view-pokemon-on-trainers-node').find('a').attr("href")));
 
         $ = cheerio.load(firstPokemonData.data);
 

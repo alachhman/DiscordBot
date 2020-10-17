@@ -10,6 +10,9 @@ module.exports = {
         const files = await fs.readdirSync(resourcePath + seek).filter(file => file.endsWith('.json'));
         const returnVals = [];
         for (const file of files) {
+            if (arg.toUpperCase() === 'AEGISLASH') {
+                arg = 'aegislash (blade forme)';
+            }
             let rawData = await fs.readFileSync(resourcePath + seek + "/" + file);
             let data = await JSON.parse(rawData);
             if (unit !== "none" && seek === "pokemon") {
@@ -31,6 +34,9 @@ module.exports = {
     findJSON: async function (arg, seek, unit) {
         const files = await fs.readdirSync(resourcePath + seek).filter(file => file.endsWith('.json'));
         for (const file of files) {
+            if (arg.toUpperCase() === 'AEGISLASH') {
+                arg = 'aegislash (blade forme)';
+            }
             let rawData = await fs.readFileSync(resourcePath + seek + "/" + file);
             let data = await JSON.parse(rawData);
             if (unit !== "none" && seek === "pokemon") {
@@ -109,23 +115,23 @@ module.exports = {
             + "\n"
             + sync.description;
     },
-    generateStatTable: async function (stats, bulk) {
-        let table = new AsciiTable("Bulk: " + bulk);
+    generateStatTable: async function (stats) {
+        let table = new AsciiTable("Bulk: " + stats.max[6][1]);
         table
             .setBorder('|', '-', '■', '■')
             .setHeading('HP', 'ATK', 'DEF', 'SPATK', 'SPDEF', 'SPD')
-            .addRow(stats.base.hp,
-                stats.base.attack,
-                stats.base.defense,
-                stats.base.sp_atk,
-                stats.base.sp_def,
-                stats.base.speed)
-            .addRow(stats.max.hp,
-                stats.max.attack,
-                stats.max.defense,
-                stats.max.sp_atk,
-                stats.max.sp_def,
-                stats.max.speed);
+            .addRow(stats.base[0][1],
+                stats.base[1][1],
+                stats.base[2][1],
+                stats.base[3][1],
+                stats.base[4][1],
+                stats.base[5][1])
+            .addRow(stats.max[0][1],
+                stats.max[1][1],
+                stats.max[2][1],
+                stats.max[3][1],
+                stats.max[4][1],
+                stats.max[5][1]);
         return "```" + table.toString() + "```";
     },
     //ToDo: hard code this

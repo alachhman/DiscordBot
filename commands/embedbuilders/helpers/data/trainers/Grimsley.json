@@ -1,10 +1,1 @@
-{
-  "name": "Grimsley",
-  "info": "As an elegant member of the Elite Four and user of Dark-type Pokémon, this risk taker has a good attitude about winning and losing.",
-  "type": "Dark",
-  "base_potential": 5,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Grimsley & Liepard"
-  ]
-}
+{"name":"Grimsley","rarity":5,"pokemon":["Liepard","Sharpedo","Sharpedo (Mega Sharpedo)"],"image":"https://serebii.net/pokemonmasters/syncpairs/grimsley.png"}

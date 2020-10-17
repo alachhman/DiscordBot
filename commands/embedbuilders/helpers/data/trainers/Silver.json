@@ -1,10 +1,1 @@
-{
-  "name": "Silver",
-  "info": "Although known for aiming to be the strongest Trainer in the world, this boy no longer cares about strength alone. He’s also realized the importance of a kind heart.\n",
-  "type": "Fire",
-  "base_potential": 5,
-  "recruit_method": "Legendary Event",
-  "pokemon_list": [
-    "Silver & Ho-Oh"
-  ]
-}
+{"name":"Silver","rarity":5,"pokemon":["Ho-Oh"],"image":"https://serebii.net/pokemonmasters/syncpairs/silver.png"}

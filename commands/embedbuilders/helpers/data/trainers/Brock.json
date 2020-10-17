@@ -1,11 +1,1 @@
-{
-  "name": "Brock",
-  "info": "Known as the rock-solid Pokémon Trainer, he is a reliable Gym Leader who watches over and supports younger Trainers.\n",
-  "type": "Rock",
-  "base_potential": 3,
-  "recruit_method": "Story Progression",
-  "pokemon_list": [
-    "Brock & Onix",
-    "Brock & Tyranitar"
-  ]
-}
+{"name":"Brock","rarity":3,"pokemon":["Onix","Tyranitar"],"image":"https://serebii.net/pokemonmasters/syncpairs/brock.png"}

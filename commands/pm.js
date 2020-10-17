@@ -3,12 +3,12 @@ const GENERAL = require("./embedbuilders/helpers/generalHelper");
 module.exports = {
     name: 'mst',
     display: 'Pokemon Masters New!',
-    description: 'Try out the new redesigned masters search with `>ms [trainer or pokemon name]`',
+    description: 'Try out the new redesigned masters search with `>ms [trainers or pokemon name]`',
     async execute(message, args, client) {
         if (message.content.startsWith(">" + this.name + " pooldata")) {
             await GENERAL.startTypingAlert(message);
             if (message.content.includes("trainers")) {
-                message.channel.send("Pooling trainer JSON data.");
+                message.channel.send("Pooling trainers JSON data.");
                 await BUILDER.joinJSON("trainers");
                 message.channel.send("done.");
             } else {

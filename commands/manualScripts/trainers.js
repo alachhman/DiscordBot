@@ -1,6 +1,36 @@
 module.exports = {
     trainerData: [
         {
+            "Trainer": "Morty",
+            "Base Potential": "5",
+            "Pokemon": "Morty & Drifblim"
+        },
+        {
+            "Trainer": "Jessie",
+            "Base Potential": "3",
+            "Pokemon": "Jessie & Arbok"
+        },
+        {
+            "Trainer": "Lucy",
+            "Base Potential": "4",
+            "Pokemon": "Lucy & Seviper"
+        },
+        {
+            "Trainer": "Serena",
+            "Base Potential": "5",
+            "Pokemon": "Serena & Fennekin     Serena & Braixen     Serena & Delphox"
+        },
+        {
+            "Trainer": "Burgh",
+            "Base Potential": "5",
+            "Pokemon": "Burgh & Leavanny"
+        },
+        {
+            "Trainer": "Dawn",
+            "Base Potential": "5",
+            "Pokemon": "Dawn & Turtwig     Dawn & Grotle     Dawn & Torterra"
+        },
+        {
             "Trainer": "Wally",
             "Base Potential": "5",
             "Pokemon": "Wally & Gallade     Wally & Mega Gallade"
@@ -58,7 +88,7 @@ module.exports = {
         {
             "Trainer": "Steven",
             "Base Potential": "",
-            "Pokemon": "Steven & Metagross     Steven & Mega Metagross"
+            "Pokemon": "Steven & Metagross     Steven & Mega Metagross     Steven & Sandslash (Alola Form)"
         },
         {
             "Trainer": "Kukui",
@@ -93,17 +123,7 @@ module.exports = {
         {
             "Trainer": "Grimsley",
             "Base Potential": "",
-            "Pokemon": "Grimsely & Liepard"
-        },
-        {
-            "Trainer": "Siebold-0",
-            "Base Potential": "",
-            "Pokemon": "Siebold & Octillery"
-        },
-        {
-            "Trainer": "Christmas-Rosa",
-            "Base Potential": "",
-            "Pokemon": "Rosa & Delibird"
+            "Pokemon": "Grimsely & Liepard     Grimsely & Sharpedo     Grimsely & Mega Sharpedo"
         },
         {
             "Trainer": "Giovanni",
@@ -113,7 +133,7 @@ module.exports = {
         {
             "Trainer": "Elesa",
             "Base Potential": "",
-            "Pokemon": "Elesa & Zebstrika"
+            "Pokemon": "Elesa & Zebstrika     Elesa & Rotom"
         },
         {
             "Trainer": "Karen",
@@ -133,7 +153,7 @@ module.exports = {
         {
             "Trainer": "Lyra",
             "Base Potential": "",
-            "Pokemon": "Lyra & Chikorita     Lyra & Bayleef     Lyra & Meganium"
+            "Pokemon": "Lyra & Chikorita     Lyra & Bayleef     Lyra & Meganium     Lyra & Jigglypuff"
         },
         {
             "Trainer": "Kris",
@@ -168,7 +188,7 @@ module.exports = {
         {
             "Trainer": "Rosa",
             "Base Potential": "",
-            "Pokemon": "Rosa & Servine     Rosa & Snivy     Rosa & Serperior"
+            "Pokemon": "Rosa & Servine     Rosa & Snivy     Rosa & Serperior     Rosa & Delibird"
         },
         {
             "Trainer": "Brendan",
@@ -293,7 +313,7 @@ module.exports = {
         {
             "Trainer": "Siebold",
             "Base Potential": "",
-            "Pokemon": "Siebold & Clawitzer"
+            "Pokemon": "Siebold & Clawitzer     Siebold & Octillery"
         },
         {
             "Trainer": "Noland",

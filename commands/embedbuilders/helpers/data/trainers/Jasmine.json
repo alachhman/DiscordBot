@@ -1,11 +1,1 @@
-{
-  "name": "Jasmine",
-  "info": "This Gym Leader is known to have a heart that cares for Pokémon. While she appears calm and gentle, she can get quite fired up when talking about Steel-type Pokémon.\n",
-  "type": "Steel",
-  "base_potential": 5,
-  "recruit_method": "Sync Pair Scout",
-  "pokemon_list": [
-    "Jasmine & Steelix",
-    "Jasmine & Mega Steelix"
-  ]
-}
+{"name":"Jasmine","rarity":5,"pokemon":["Steelix","Steelix (Mega Steelix)"],"image":"https://serebii.net/pokemonmasters/syncpairs/jasmine.png"}

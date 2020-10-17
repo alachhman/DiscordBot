@@ -90,8 +90,23 @@ module.exports = {
         );
         return curPage;
     },
+    getColorByRarity: async function (rarity) {
+        let color;
+        switch (rarity) {
+            case 5:
+                color = "#fffe00";
+                break;
+            case 4:
+                color = "#7e7e77";
+                break;
+            case 2:
+                color = "#a35728";
+                break;
+        }
+        return color;
+    },
     getColor: async function (type) {
-        var elementColor;
+        let elementColor;
         switch (type.toLowerCase()) {
             case 'normal':
                 elementColor = "#ffffff";

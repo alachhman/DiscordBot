@@ -1,7 +1,6 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
 const axios = require("axios");
-log = console.log;
 const pokemonFolder = "C:\\Users\\Anthony\\WebstormProjects\\DiscordBot\\commands\\embedbuilders\\helpers\\data\\pokemon\\";
 
 const getPokemonMastersPokemonList = async () => {
