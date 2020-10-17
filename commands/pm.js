@@ -1,7 +1,7 @@
 const BUILDER = require('./embedbuilders/pmEmbedBuilder');
 const GENERAL = require("./embedbuilders/helpers/generalHelper");
 module.exports = {
-    name: 'mst',
+    name: 'ms',
     display: 'Pokemon Masters New!',
     description: 'Try out the new redesigned masters search with `>ms [trainers or pokemon name]`',
     async execute(message, args, client) {
