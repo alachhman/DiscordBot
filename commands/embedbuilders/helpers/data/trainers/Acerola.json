@@ -1,10 +1,1 @@
-{
-  "name": "Acerola",
-  "rarity": 5,
-  "pokemon": [
-    "Palossand",
-    "Mimikyu",
-    "Mimikyu (Busted Form)"
-  ],
-  "image": "https://serebii.net/pokemonmasters/syncpairs/acerola.png"
-}
+{"name":"Acerola","rarity":5,"pokemon":["Palossand","Mimikyu","Mimikyu (Busted Form)"],"image":"https://serebii.net/pokemonmasters/syncpairs/acerola.png"}

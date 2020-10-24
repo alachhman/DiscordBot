@@ -1,17 +1,20 @@
 const fs = require("fs");
 const cheerio = require("cheerio");
 const axios = require("axios");
+const request = require('request');
 const trainerFolder = "C:\\Users\\Anthony\\WebstormProjects\\DiscordBot\\commands\\embedbuilders\\helpers\\data\\trainers\\";
 
 const getTrainerData = async () => {
+    console.log("STARTING DATA DOWNLOAD\n===================");
     let body = await axios.get(
         "https://serebii.net/pokemonmasters/trainers.shtml"
     );
     const $ = cheerio.load(body.data);
     const trainerData = $("#content > main > table:nth-child(8) > tbody > tr");
     let isFirst = true;
-    trainerData.each(await async function() {
-        if(isFirst){
+    let imgURLs = [];
+    await trainerData.each(await async function () {
+        if (isFirst) {
             isFirst = false;
             return;
         }
@@ -34,10 +37,43 @@ const getTrainerData = async () => {
             image: "https://serebii.net/pokemonmasters/syncpairs/" + trainerName.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + ".png"
         };
 
+        //await download(trainer.image, "trainerImages/" + trainer.name + ".png");
+
         let objectString = JSON.stringify(trainer);
-        fs.writeFileSync(trainerFolder + trainer.name + ".json", objectString);
+        await fs.writeFileSync(trainerFolder + trainer.name + ".json", objectString);
         console.log(trainer.name + " has been written");
+
+        imgURLs.push({
+            url: trainer.image,
+            name: trainer.name
+        });
+    });
+    return imgURLs;
+};
+
+const getTrainerImages = async (imgURLs) => {
+    console.log("STARTING IMAGE DOWNLOAD\n===================");
+    let count = 1;
+    imgURLs.forEach(await async function (img) {
+        setTimeout(async x => {
+            console.log("Downloading " + img.name + "'s image");
+            await download(img.url, "trainerImages/" + img.name + ".png");
+        }, count * 500);
+        count++;
     })
 };
 
-getTrainerData().then(x => x);
+const download = async (url, image_path) => {
+    await axios({url, responseType: 'stream'})
+        .then(await async function (response){
+            return new Promise(await async function (resolve, reject) {
+                await response.data
+                    .pipe(await fs.createWriteStream(image_path))
+                    .on('finish', () => resolve())
+                    .on('error', e => reject(e));
+            })
+        })
+};
+
+
+getTrainerData().then(async x => await getTrainerImages(x));
