@@ -1,1 +1,10 @@
-{"name":"Steven","rarity":5,"pokemon":["Metagross","Metagross (Mega Metagross)","Sandslash (Alola Form)"],"image":"https://serebii.net/pokemonmasters/syncpairs/steven.png"}
+{
+  "name": "Steven",
+  "rarity": 5,
+  "pokemon": [
+    "Metagross",
+    "Metagross (Mega Metagross)",
+    "Sandslash (Alola Form)"
+  ],
+  "image": "http://pokemasdb.com/trainer/image/Steven.png"
+}

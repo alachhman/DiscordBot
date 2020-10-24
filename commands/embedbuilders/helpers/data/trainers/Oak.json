@@ -1,1 +1,9 @@
-{"name":"Oak","rarity":3,"pokemon":["Mew","Mew"],"image":"https://serebii.net/pokemonmasters/syncpairs/professoroak.png"}
+{
+  "name": "Oak",
+  "rarity": 3,
+  "pokemon": [
+    "Mew",
+    "Mew"
+  ],
+  "image": "http://pokemasdb.com/trainer/image/Oak.png"
+}

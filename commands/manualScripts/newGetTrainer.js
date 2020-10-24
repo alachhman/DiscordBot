@@ -34,7 +34,7 @@ const getTrainerData = async () => {
             name: trainerName,
             rarity: trainerRarity.length,
             pokemon: pokemonList,
-            image: "https://serebii.net/pokemonmasters/syncpairs/" + trainerName.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + ".png"
+            image: "http://pokemasdb.com/trainer/image/" + trainerName + ".png"
         };
 
         //await download(trainer.image, "trainerImages/" + trainer.name + ".png");
@@ -44,7 +44,7 @@ const getTrainerData = async () => {
         console.log(trainer.name + " has been written");
 
         imgURLs.push({
-            url: trainer.image,
+            url: "https://serebii.net/pokemonmasters/syncpairs/" + trainerName.replace("Synga Suit ", "").toLowerCase().replace(" ", "") + ".png",
             name: trainer.name
         });
     });
