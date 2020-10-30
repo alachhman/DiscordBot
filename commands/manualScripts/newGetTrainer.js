@@ -31,10 +31,11 @@ const getTrainerData = async () => {
             .split("<br>");
 
         const trainer = {
-            name: trainerName,
+            name: trainerName.replace("Professor ", ""),
             rarity: trainerRarity.length,
             pokemon: pokemonList,
-            image: "http://pokemasdb.com/trainer/image/" + trainerName + ".png"
+            image: "http://pokemasdb.com/trainer/image/" + trainerName + ".png",
+            data: "http://pokemasdb.com/trainer/" + trainerName.replace(" ", "%20")
         };
 
         //await download(trainer.image, "trainerImages/" + trainer.name + ".png");

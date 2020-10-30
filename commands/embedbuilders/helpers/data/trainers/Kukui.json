@@ -1,8 +1,1 @@
-{
-  "name": "Kukui",
-  "rarity": 5,
-  "pokemon": [
-    "Lycanroc"
-  ],
-  "image": "http://pokemasdb.com/trainer/image/Kukui.png"
-}
+{"name":"Kukui","rarity":5,"pokemon":["Lycanroc"],"image":"http://pokemasdb.com/trainer/image/Professor Kukui.png","data":"http://pokemasdb.com/trainer/Professor%20Kukui"}
