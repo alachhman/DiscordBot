@@ -208,7 +208,7 @@ async function addTrainerRole(message) {
             message.delete(2000).catch(console.error);
             message.channel.send(`Trainer role given to ${message.author.username}`)
         } catch (e) {
-            //
+            console.log(e)
         }
     } else {
         message.delete(10000).catch(console.error);
