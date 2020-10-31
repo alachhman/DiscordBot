@@ -199,7 +199,9 @@ async function addTrainerRole(message) {
     if (message.content === ">enter") {
         try {
             let member = message.member;
+            console.log(member);
             let trainerRole = message.guild.roles.get('611638752015679596');
+            console.log(trainerRole);
             if (member !== null && trainerRole !== null) {
                 if (!member.roles.has(trainerRole.id)) {
                     await member.addRole(trainerRole).catch(console.error);
