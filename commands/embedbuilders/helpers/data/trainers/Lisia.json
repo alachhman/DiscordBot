@@ -1,10 +1,1 @@
-{
-  "name": "Lisia",
-  "rarity": 5,
-  "pokemon": [
-    "Altaria",
-    "Altaria (Mega Altaria)"
-  ],
-  "image": "http://pokemasdb.com/trainer/image/Lisia.png",
-  "data": "http://pokemasdb.com/trainer/Lisia"
-}
+{"name":"Lisia","rarity":5,"pokemon":["Altaria","Altaria (Mega Altaria)"],"image":"http://pokemasdb.com/trainer/image/Lisia.png","data":"http://pokemasdb.com/trainer/Lisia"}

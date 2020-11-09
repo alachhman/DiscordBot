@@ -253,3 +253,5 @@ const getPokemonData = async (links) => {
 };
 
 getPokemonList().then(x => getPokemonData(x)).then(y => console.log("done."));
+
+// getPokemonData(["https://gamepress.gg/pokemonmasters/pokemon/alder-volcarona"]).then(x => console.log("done."));
