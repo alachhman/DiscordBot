@@ -41,7 +41,7 @@ module.exports = {
                 .setAuthor(unit.name + " " + rarity)
                 .setThumbnail(icon)
                 .setTitle('View This Info In Your Browser')
-                .setURL("https://www.antnee.net/#/pm/pair/" + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "_"))
+                .setURL("https://www.antnee.net/#/trainer/" + unit.name.replace("Synga Suit ", "").toLowerCase().replace(" ", "_"))
                 .setImage(image)
                 .setColor(color);
             embedArr.push(baseEmbed);
