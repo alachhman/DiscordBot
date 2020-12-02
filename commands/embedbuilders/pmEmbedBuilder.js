@@ -89,7 +89,7 @@ async function generateIndividualPKMNEmbed(PKMN, client) {
     return new Discord.RichEmbed()
         .setAuthor(PKMN.trainer + " & " + PKMN.name + " ・ " + PKMN.role + " " + await GENERAL.generateStars(PKMN.rarity), await HELPER.getPKMNIcon(PKMN.name))
         .setTitle('View This Info In Your Browser')
-        .setURL("https://www.antnee.net/#/pm/pair/" + PKMN.trainer.replace("Synga Suit ", "").toLowerCase().replace(" ", "_"))
+        .setURL("https://www.antnee.net/#/trainer/" + PKMN.trainer.replace("Synga Suit ", "").toLowerCase().replace(" ", "_"))
         .addField("**〜 Typing 〜**", "**Type: ** " + await GENERAL.getEmoji(PKMN.typing[0].toLowerCase(), client)
             + (isTwoTyped ? " " : await GENERAL.getEmoji(PKMN.typing[1].toLowerCase(), client))
             + " ・ **Weakness:** " + await GENERAL.getEmoji(PKMN.weakness.toLowerCase(), client)
