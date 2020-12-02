@@ -84,7 +84,7 @@ async function generateIndividualPKMNEmbed(PKMN, client) {
     const icon = await HELPER.getUnitIcon(PKMN.trainer);
     let movesOut = await HELPER.generateMovesOut(PKMN.moves, client) + await HELPER.generateSyncOut(PKMN.syncMove, client);
     if (movesOut.length > 1024) {
-        movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/pm/pair/" + PKMN.trainer.replace("Synga Suit ", "").toLowerCase().replace(" ", "_") + '\n'
+        movesOut = "Sorry, this sync pair's moves descriptions are too long to display here, you can see their information here: https://www.antnee.net/#/trainer/" + PKMN.trainer.replace("Synga Suit ", "").replace(" ", "_") + '\n'
     }
     return new Discord.RichEmbed()
         .setAuthor(PKMN.trainer + " & " + PKMN.name + " ・ " + PKMN.role + " " + await GENERAL.generateStars(PKMN.rarity), await HELPER.getPKMNIcon(PKMN.name))
