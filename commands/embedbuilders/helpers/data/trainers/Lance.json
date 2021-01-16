@@ -1,1 +1,10 @@
-{"name":"Lance","rarity":5,"pokemon":["Dragonite"],"image":"http://pokemasdb.com/trainer/image/Lance.png","data":"http://pokemasdb.com/trainer/Lance"}
+{
+  "name": "Lance",
+  "rarity": 5,
+  "pokemon": [
+    "Dragonite",
+    "Gyarados"
+  ],
+  "image": "http://pokemasdb.com/trainer/image/Lance.png",
+  "data": "http://pokemasdb.com/trainer/Lance"
+}

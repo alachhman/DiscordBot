@@ -1,0 +1,11 @@
+{
+  "name": "May",
+  "rarity": 5,
+  "pokemon": [
+    "Mudkip",
+    "Marshtomp",
+    "Swampert"
+  ],
+  "image": "http://pokemasdb.com/trainer/image/May.png",
+  "data": "http://pokemasdb.com/trainer/May"
+}

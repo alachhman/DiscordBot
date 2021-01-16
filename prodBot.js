@@ -28,7 +28,8 @@ let dataStore = {
 let requests = [];
 
 client.once('ready', async () => {
-    console.log(`Bot is running on ${client.guilds.size} servers`);
+    // console.log(`Bot is running on ${client.guilds.cache.size} servers`);
+    console.log(`Bot is running`);
     client.user.setActivity('>help');
     //await runUpdates(scraperFiles);
 });
